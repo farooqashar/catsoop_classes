@@ -1,0 +1,31 @@
+
+<question multiplechoice>
+csq_renderer = 'checkbox'
+csq_prompt='Which of the following are valid HTTP requests?  Check all that apply.'
+csq_options=['<code>GET</code>', '<code>RECEIVE</code>', '<code>POST</code>', '<code>ERROR</code>', '<code>ECHO</code>']
+csq_soln = [True, False, True, False, False]
+csq_npoints = 1
+def csq_check_function(sub, sol):
+    if sub == csq_soln:
+        return (1,"Good Job!")
+    else:
+        return (0,"Try Again!")
+csq_explanation = "<code>GET</code> and <code>POST</code> are the fundamental HTTP requests that are utilized in <code>Flask</code> forms. Namely, the <code>GET</code> request is used to receive the form information while the <code>POST</code> request is meant to update the data."
+csq_grading_mode = 'legacy'
+</question>
+
+<question multiplechoice>
+csq_renderer = 'radio'
+csq_prompt="Which of the following is the correct <code>Python</code> dictionary for accessing an <code>HTML</code> form's field values?"
+csq_options=["<code>request.method</code>", "<code>request.label</code>", '<code>request.form</code>']
+csq_soln = '<code>request.form</code>'
+csq_soln_mode = 'index' # (otherwies csq_soln = csq_options[2])
+csq_npoints = 1
+def csq_check_function(sub, sol):
+    if sub == 2:
+        return (1,"Good Job!")
+    else:
+        return (0,"Try Again!")
+csq_explanation = "We can pass in the key of a field name, such as <code>'first_name'</code> in the <code>Python</code> dictionary <code>request.form</code> in order to access form values to be used in a <code>POST</code> request for instance to a database."
+csq_grading_mode = 'legacy'
+</question>

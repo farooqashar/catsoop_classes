@@ -1,0 +1,16 @@
+
+<question multiplechoice>
+csq_renderer = 'radio'
+csq_prompt='Which of the following is the common directory for placing static files?'
+csq_options=["<code>code</code>", "<code>images</code>", "<code>static</code>"]
+csq_soln = "<code>static</code>"
+csq_soln_mode = 'index' # (otherwies csq_soln = csq_options[2])
+csq_npoints = 1
+def csq_check_function(sub, sol):
+    if sub == 2:
+        return (1,"Good Job!")
+    else:
+        return (0,"Try Again!")
+csq_explanation = "We use the <code>static</code> directory for placing all relevant static files, such as images, etc."
+csq_grading_mode = 'legacy'
+</question>

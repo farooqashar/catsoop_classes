@@ -1,0 +1,13 @@
+
+<h3>Form</h3> 
+
+<p> We can start out by creating an <code>HTML</code> form in order to acquire some data from the user via standard <code>HTML</code> inputs. The form itself will be used to send a <code>POST</code> request that we can access the properties of via the <code>Python</code> route function. </p>
+
+<img src = "CURRENT/form.png" width="900" height="300"></img>
+
+<h3>Request Information</h3> 
+
+<p> After submitting the values from the <code>HTML</code> form, we can access the values after the <code>POST</code> request by using <code>request.form["field_name"]</code> in the route function. These values can also be saved in a database for persistence. </p>
+
+<img src = "CURRENT/method.png" width="800" height="200"></img>
+

@@ -1,0 +1,11 @@
+
+<p> 
+Flask is a lightweight <a target = "_blank" href = "https://wsgi.readthedocs.io/en/latest/">Web Server Gateway Interface(WSGI)</a> Python web application framework. It is designed to make getting started quick and easy, with the ability to scale up to complex applications that are <i>dynamic</i>. 
+</p>
+
+<p> 
+Flask offers suggestions, but doesn't enforce any dependencies or project layout. It is up to the developer to choose the tools and libraries they want to use. There are many extensions provided by the community that make adding new functionality easy.
+</p>
+
+<p> Flask relies on routes, which act as links to appropiate pages on your website. There are also templates that act as the views for the different routes on your website. 
+</p>

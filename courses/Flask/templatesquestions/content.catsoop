@@ -1,0 +1,18 @@
+
+
+<question multiplechoice>
+csq_renderer = 'radio'
+csq_prompt='Which of the following is the correct method for returning an <code>HTML</code> template?'
+csq_options=["<code>return template('file.html')</code>", "<code>return render_template('file.html')</code>", "<code>return 'file.html'</code>"]
+csq_soln = "<code>return render_template('file.html')</code>"
+csq_soln_mode = 'index' # (otherwies csq_soln = csq_options[1])
+csq_npoints = 1
+def csq_check_function(sub, sol):
+    if sub == 1:
+        return (1,"Good Job!")
+    else:
+        return (0,"Try Again!")
+csq_explanation = "We use the built-in <code>Flask</code> method <code>render_template</code> in order to pass in the correct <code>HTML</code> file."
+csq_grading_mode = 'legacy'
+</question>
+

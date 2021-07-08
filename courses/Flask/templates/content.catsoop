@@ -1,0 +1,4 @@
+
+<p> Flask templates can be <code>HTML</code> files that are rendered and returned to the user when a certain route is accessed by the user. These are important since the content can be completely customized by the developer. In the instance below, we can see that the <code>hello.html</code> file will be rendered to the user when the main home route<code>('/')</code> is accessed. The templates can be found in a <code>templates</code> directory in the project. <p>
+
+<img src = "CURRENT/route.png" width="1000" height="300"></img>

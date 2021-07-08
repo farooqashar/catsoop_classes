@@ -1,0 +1,2 @@
+
+<p> Flask is powerful enough for the inclusion of static files. This is important for adding media, such as images, or adding external logic/style via <code>CSS</code> for instance. To add some static files to the <code>Flask</code> project, we can create a new directory <code>static</code> that can be used for static content, which can be referenced in other parts of the project via for instance <code>url_for('static', filename='...')</code>.<p>

@@ -1,0 +1,26 @@
+
+<p> Routes are links to different parts of the website that enable the user to see different views, via <code>HTML</code> files for instance</p>
+
+<p> To get started with setting up Flask routes, we can define a <code>main.py</code> file that will house these different routes.</p>
+
+
+<h3>Imports</h3> 
+
+<p> We first need to import necessary classes and functions from the <code>Flask</code> module</p>
+
+<img src = "CURRENT/imports.png" width="1000" height="300"></img>
+
+<h3>Creating App</h3> 
+
+<p> We then need to create a <code>Flask</code> app with a name.</p>
+
+<img src = "CURRENT/app.png" width="1000" height="300"></img>
+
+<h3>Defining Route</h3> 
+
+<p> We then define a route with the appropriate function decorator and then create a function that will ultimately render an <code>HTML</code> template for the user.</p>
+
+<img src = "CURRENT/route.png" width="1000" height="300"></img>
+
+
+<p> We can create more routes by adding more of these decorators/functions combinations in this <code>Python</code> file. </p>

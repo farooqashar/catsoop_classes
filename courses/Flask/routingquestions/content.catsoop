@@ -1,0 +1,53 @@
+
+<question multiplechoice>
+csq_renderer = 'radio'
+csq_prompt='Which of the following is the correct way to add the relevant elements from the <code>Flask</code> module?'
+csq_options=['<code>use Flask, render_template</code>', '<code>from flask import Flask, render_template</code>', '<code>i Flask, render_template</code>']
+csq_soln = '<code>from flask import Flask, render_template</code>'
+csq_soln_mode = 'index' # (otherwies csq_soln = csq_options[1])
+csq_npoints = 1
+def csq_check_function(sub, sol):
+    if sub == 1:
+        return (1,"Good Job!")
+    else:
+        return (0,"Try Again!")
+csq_grading_mode = 'legacy'
+csq_explanation = 'We need to import the <code>Flask</code> and the <code>render_template</code> elements from the flask package.'
+
+</question>
+
+<question multiplechoice>
+csq_renderer = 'radio'
+csq_prompt='Which of the following is the most correct way to create a new <code>Flask</code> app named <code>newApp</code>?'
+csq_options=['<code>newApp = Flask(__ name __)</code>', '<code>newApp = Flask.createApplication()</code>', '<code>Flask</code>']
+csq_soln = '<code>newApp = Flask(__ name __)</code>'
+csq_soln_mode = 'index' # (otherwies csq_soln = csq_options[0])
+csq_npoints = 1
+def csq_check_function(sub, sol):
+    if sub == 0:
+        return (1,"Good Job!")
+    else:
+        return (0,"Try Again!")
+csq_grading_mode = 'legacy'
+csq_explanation = 'We need to name it the right variable and then simply call <code>Flask</code> with the name dunder method'
+</question>
+
+<question multiplechoice>
+csq_renderer = 'radio'
+csq_prompt='Which of the following is the correct decorate for a <code>Python</code> route function to define a new <code>Flask</code> route?'
+csq_options=["<code>@app_route('/')</code>", "<code>@app.route('/')</code>", '<code>@route(/)</code>']
+csq_soln = "<code>@app.route('/')</code>"
+csq_soln_mode = 'index' # (otherwies csq_soln = csq_options[1])
+csq_npoints = 1
+def csq_check_function(sub, sol):
+    if sub == 1:
+        return (1,"Good Job!")
+    else:
+        return (0,"Try Again!")
+csq_explanation = "The framework of <code>Flask</code> relies on this decorator of the <code>@app.route('/')</code>."
+csq_grading_mode = 'legacy'
+</question>
+
+
+
+
